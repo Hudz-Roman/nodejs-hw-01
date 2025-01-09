@@ -3,8 +3,8 @@ import { writeContacts } from '../utils/writeContacts.js';
 
 const generateContacts = async (number) => {
   for (let i = 1; i <= number; i++) {
-    writeContacts(createFakeContact());
+    await writeContacts(createFakeContact());
   }
 };
 
-generateContacts(4);
+generateContacts(2);
