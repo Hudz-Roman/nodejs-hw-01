@@ -3,12 +3,11 @@ import { writeContacts } from '../utils/writeContacts.js';
 
 export const removeLastContact = async () => {
   try {
-    const data = await readContacts();
-    data.pop();
-    await writeContacts(data);
-    console.log('Last contact successfully deleted!');
+    const contacts = await readContacts();
+    contacts.pop();
+    await writeContacts(contacts);
   } catch (err) {
-    console.log('Error with deleting last contact: ', err);
+    console.log('Error: ', err);
   }
 };
 
