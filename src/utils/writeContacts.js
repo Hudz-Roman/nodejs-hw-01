@@ -10,5 +10,3 @@ export const writeContacts = async (contacts) => {
     console.log('Error writing contacts: ', err);
   }
 };
-
-//! Maybe problem here!
